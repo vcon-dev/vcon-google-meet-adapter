@@ -1,0 +1,7 @@
+node_modules/
+dist/
+out/
+.env
+.google-token.json
+.meet-adapter-state.json
+.omc/

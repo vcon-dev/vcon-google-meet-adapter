@@ -1,0 +1,25 @@
+{
+  "name": "vcon-google-meet-adapter",
+  "version": "0.1.0",
+  "description": "Turn Google Meet conference records and transcripts into vCons",
+  "license": "Apache-2.0",
+  "type": "module",
+  "bin": { "vcon-google-meet": "dist/cli.js" },
+  "scripts": {
+    "auth": "tsx src/cli.ts auth",
+    "sync": "tsx src/cli.ts sync",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test test/*.test.ts"
+  },
+  "engines": { "node": ">=21.7" },
+  "dependencies": {
+    "googleapis": "^144.0.0",
+    "vcon-js": "^0.5.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}
